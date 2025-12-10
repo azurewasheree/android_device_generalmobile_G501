@@ -303,10 +303,10 @@
         </EncoderProfile>
         <EncoderProfile quality="high" fileFormat="mp4" duration="30">
             <Video codec="h264"
-                   bitRate="9000000"
-                   width="1280"
-                   height="720"
-                   frameRate="23" />
+                   bitRate="17000000"
+                   width="1920"
+                   height="1080"
+                   frameRate="30" />
             <Audio codec="aac"
                    bitRate="128000"
                    sampleRate="48000"
@@ -328,7 +328,7 @@
                    bitRate="1000000"
                    width="320"
                    height="240"
-                   frameRate="20" />
+                   frameRate="30" />
             <Audio codec="aac"
                    bitRate="128000"
                    sampleRate="48000"
@@ -350,7 +350,7 @@
                    bitRate="4500000"
                    width="640"
                    height="480"
-                   frameRate="28" />
+                   frameRate="30" />
             <Audio codec="aac"
                    bitRate="128000"
                    sampleRate="48000"
@@ -361,12 +361,25 @@
                    bitRate="9000000"
                    width="1280"
                    height="720"
-                   frameRate="23" />
+                   frameRate="30" />
             <Audio codec="aac"
                    bitRate="128000"
                    sampleRate="48000"
                    channels="1" />
         </EncoderProfile>
+        <!-- prize  add  for sub camera 1080p  by zhuzhengjiang    20201123-begin -->
+        <EncoderProfile quality="1080p" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+                   bitRate="17000000"
+                   width="1920"
+                   height="1080"
+                   frameRate="30" />
+            <Audio codec="aac"
+                   bitRate="128000"
+                   sampleRate="48000"
+                   channels="1" />
+        </EncoderProfile>
+        <!-- prize  add  for sub camera 1080p  by zhuzhengjiang    20201123-end -->
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
             <Video codec="h263"
                    bitRate="1000000"
@@ -380,9 +393,9 @@
         </EncoderProfile>
         <EncoderProfile quality="timelapsehigh" fileFormat="mp4" duration="30">
             <Video codec="h264"
-                   bitRate="9000000"
-                   width="1280"
-                   height="720"
+                   bitRate="17000000"
+                   width="1920"
+                   height="1080"
                    frameRate="30" />
             <Audio codec="aac"
                    bitRate="128000"
@@ -405,7 +418,7 @@
                    bitRate="1000000"
                    width="320"
                    height="240"
-                   frameRate="20" />
+                   frameRate="30" />
             <Audio codec="aac"
                    bitRate="128000"
                    sampleRate="48000"
@@ -444,6 +457,19 @@
                    sampleRate="48000"
                    channels="1" />
         </EncoderProfile>
+        <!-- prize  add  for sub camera 1080p  by zhuzhengjiang    20201123-begin -->
+        <EncoderProfile quality="timelapse1080p" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+                   bitRate="17000000"
+                   width="1920"
+                   height="1080"
+                   frameRate="30" />
+            <Audio codec="aac"
+                   bitRate="128000"
+                   sampleRate="48000"
+                   channels="1" />
+        </EncoderProfile>
+        <!-- prize  add  for sub camera 1080p  by zhuzhengjiang    20201123-end -->
         <ImageEncoding quality="95" />
         <ImageEncoding quality="80" />
         <ImageEncoding quality="70" />
