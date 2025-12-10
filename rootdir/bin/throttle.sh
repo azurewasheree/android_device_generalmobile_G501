@@ -1,4 +1,4 @@
-#!/vendor/bin/sh
+#!/system/bin/sh
 # traffic control; arg1:ifname, arg2: rx, arg 3 tx.
 #
 export PATH=/data:$PATH
