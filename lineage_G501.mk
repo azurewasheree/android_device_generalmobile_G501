@@ -10,21 +10,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from v7101o device
-$(call inherit-product, device/teracube/v7101o/device.mk)
+$(call inherit-product, device/generalmobile/G501/device.mk)
 
-# Inherit some common PixelExperience stuff.
-TARGET_USES_AOSP_RECOVERY := true
+# Inherit some common LineageOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_v7101o
-PRODUCT_DEVICE := v7101o
-PRODUCT_BRAND := Teracube
-PRODUCT_MODEL := Teracube One
-PRODUCT_MANUFACTURER := Teracube
+PRODUCT_NAME := lineage_G501
+PRODUCT_DEVICE := G501
+PRODUCT_BRAND := GM
+PRODUCT_MODEL := G501
+PRODUCT_MANUFACTURER := General Mobile
     
-PRODUCT_GMS_CLIENTID_BASE := android-teracube
+PRODUCT_GMS_CLIENTID_BASE := android-telpa-trev2
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=v7101o
+    PRODUCT_NAME=G501_S
