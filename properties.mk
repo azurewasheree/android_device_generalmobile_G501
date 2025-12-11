@@ -16,23 +16,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.camera3.pipeline.bufnum.base.imgo=5 \
-    persist.vendor.camera3.pipeline.bufnum.base.lcso=5 \
-    persist.vendor.camera3.pipeline.bufnum.base.rrzo=5 \
+    persist.vendor.camera3.pipeline.bufnum.base.imgo=4 \
+    persist.vendor.camera3.pipeline.bufnum.base.lcso=4 \
+    persist.vendor.camera3.pipeline.bufnum.base.rrzo=4 \
     persist.vendor.camera3.pipeline.bufnum.base.rsso=5 \
-    persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=8 \
-    persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=8 \
-    persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=8 \
-    persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=8 \
-    persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=8 \
-    persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=6 \
+    persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5 \
+    persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=7 \
+    persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=7 \
+    persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=7 \
+    persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=7 \
+    persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv= \
     persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6 \
     persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6 \
     persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6 \
     persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6 \
-    ro.mtk_cam_stereo_camera_support=1 \
-    ro.vendor.camera3.zsl.default=140 \
-    ro.vendor.mtk_cam_lomo_support=1 \
+    ro.vendor.camera3.zsl.default=310 \
     ro.vendor.mtk_camera_app_version=3 \
     ro.vendor.mtk_zsdhdr_support=1 \
     vendor.camera.mdp.cz.enable=1 \
@@ -53,7 +51,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
-    ro.hardware.egl=mali \
+    ro.hardware.egl=meow \
     ro.vendor.mtk_pq_support=2 \
     ro.vendor.mtk_pq_color_mode=1 \
     ro.vendor.mtk_blulight_def_support=1 \
@@ -66,7 +64,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
+    ro.frp.pst=/dev/block/by-name/frp
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -86,45 +84,31 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.md_auto_setup_ims=1 \
     persist.vendor.mtk_ct_volte_support=1
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1
-
 # Keymaster
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.mtk_emmc_support=1
+    ro.vendor.mtk_emmc_support=1 \
+    ro.vendor.mtk_ufs_support=1
 
 # LMK
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lmk.kill_heaviest_task=true \
     ro.lmk.kill_timeout_ms=100 \
-    ro.lmk.use_minfree_levels=true \
     persist.vendor.duraspeed.support=1 \
-    persist.vendor.duraspeed.app.on=1 \
-    persist.vendor.heavy.loading.support=1
+    persist.vendor.duraspeed.app.on=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.stagefright.thumbnail.prefer_hw_codecs=true \
-    vendor.mtk.vdec.waitkeyframeforplay=1
+    vendor.mtk.vdec.waitkeyframeforplay=9
 
 # Neural Networks
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.mtk_nn_support=1
 
-# NFC
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.st_nfc_ignore_addon_support=1 \
-    ro.vendor.mtk_nfc_addon_support=1 \
-    ro.vendor.mtk_uicc_clf=1
-
 # Platform
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.mediatek.platform=MT6771 \
     ro.vendor.mtk_config_max_dram_size=0x800000000 \
-    ro.vendor.mediatek.version.branch=alps-mp-q0.mp1 \
-    ro.vendor.mediatek.version.release=alps-mp-q0.mp1-V9.13.1_teracube.q0mp1.t1_v1001_bsp \
+    ro.vendor.mediatek.version.branch=alps-mp-r0.mp1 \
+    ro.vendor.mediatek.version.release=alps-mp-r0.mp1-V8.107.1_koobee.r0mp1.k61v1.64.bsp_P17 \
     ro.vendor.mtk_wappush_support=1 \
     ro.vendor.mtk_fd_support=1 \
     ro.vendor.mtk_exchange_support=1
@@ -135,11 +119,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.fd.off.counter=50 \
     persist.vendor.radio.fd.r8.counter=150 \
     persist.vendor.radio.fd.off.r8.counter=50 \
-    ro.vendor.mtk_protocol1_rat_config=Lf/Lt/W/G \
-    ro.vendor.mtk_md1_support=9 \
+    ro.vendor.mtk_protocol1_rat_config=Lf/W/G \
+    ro.vendor.mtk_md1_support=14 \
     ro.vendor.mtk_c2k_lte_mode=0 \
     ro.vendor.mtk_eccci_c2k=1 \
-    ro.vendor.mtk_ps1_rat=Lf/Lt/W/G \
+    ro.vendor.mtk_ps1_rat=Lf/W/G \
     ro.vendor.mtk_lte_support=1 \
     ro.vendor.num_md_protocol=2 \
     ro.vendor.mtk_world_phone_policy=0 \
@@ -165,43 +149,32 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
-    ro.surface_flinger.running_without_sync_framework=true \
-    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
-    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.latch_unsignaled=1 \
-    debug.sf.enable_gl_backpressure=1 \
-    debug.sf.early_phase_offset_ns=500000 \
-    debug.sf.early_app_phase_offset_ns=500000 \
-    debug.sf.early_gl_phase_offset_ns=3000000 \
-    debug.sf.early_gl_app_phase_offset_ns=15000000
+    ro.surface_flinger.vsync_event_phase_offset_ns=8300000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=8300000
 
 # Telephony (SIM)
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.multisim.config=dsds \
-    persist.vendor.radio.msimmode=dsds \
-    ro.vendor.radio.max.multisim=dsds \
-    ro.telephony.sim.count=2 \
+    persist.radio.multisim.config=ss \
+    persist.vendor.radio.msimmode=ss \
+    ro.vendor.radio.max.multisim=ss \
+    ro.telephony.sim.count=1 \
     persist.vendor.mtk_sim_switch_policy=2
 
 # Telephony
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.telephony.default_network=10,10,10,10
+    ro.telephony.default_network=9,9,9,9
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     mediatek.wlan.ctia=0 \
     ro.mediatek.wlan.p2p=1 \
     ro.mediatek.wlan.wsc=1 \
-    ro.nid.productinfo=61 \
-    ro.nid.wifi_mac_address=53 \
     ro.vendor.wlan.gen=gen3 \
     ro.vendor.wifi.sap.interface=ap0
 
 # Wifi Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.wfd.dummy.enable=1 \
+    ro.vendor.wfd.dummy.enable=0 \
     ro.vendor.wfd.iframesize.level=0 \
     ro.vendor.mtk_wfd_support=1
 
