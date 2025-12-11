@@ -1,32 +1,26 @@
 [
  {
-    "repository" : "vendor_teracube_v7101o",
-    "target_path": "vendor/teracube/v7101o",
-    "remote"     : "pixel-devices-blobs",
-    "revision"   : "eleven"
+   "repository"  : "azurewasheree/vendor_generalmobile_G501",
+   "target_path" : "vendor/generalmobile/G501",
+   "remote"      : "github",
+   "branch"      : "lineage-18.1"
  },
  {
-    "repository" : "vendor_teracube_firmware",
-    "target_path": "vendor/teracube/firmware",
-    "remote"     : "pixel-devices-blobs",
-    "revision"   : "eleven"
+   "repository"  : "azurewasheree/device_generalmobile_G501-modules",
+   "target_path" : "device/generalmobile/G501-modules",
+   "remote"      : "github",
+   "branch"      : "lineage-18.1"
  },
  {
-   "repository"  : "device_teracube_v7101o-modules",
-   "target_path" : "device/teracube/v7101o-modules",
-   "remote"      : "pixel-devices",
-   "branch"      : "eleven"
+   "repository"  : "azurewasheree/kernel_generalmobile_G501",
+   "target_path" : "kernel/generalmobile/G501",
+   "remote"      : "github",
+   "branch"      : "lineage-18.1"
  },
  {
-   "repository"  : "kernel_mediatek_alps-4.4",
-   "target_path" : "kernel/mediatek/alps-4.4",
-   "remote"      : "pixel-devices",
-   "branch"      : "eleven"
- },
- {
-   "repository"  : "device_mediatek_sepolicy_vndr",
+   "repository"  : "PixelExperience/device_mediatek_sepolicy_vndr",
    "target_path" : "device/mediatek/sepolicy_vndr",
-   "remote"      : "pixel",
+   "remote"      : "github",
    "branch"      : "eleven"
  }
 ]
