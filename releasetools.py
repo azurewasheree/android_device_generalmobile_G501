@@ -57,4 +57,7 @@ def OTA_InstallEnd(info, incremental):
   AddFirmware(info, "spmfw.img", "/dev/block/by-name/spmfw", False, incremental)
   AddFirmware(info, "sspm.img", "/dev/block/by-name/sspm_1", "/dev/block/by-name/sspm_2", incremental)
   AddFirmware(info, "tee.img", "/dev/block/by-name/tee1", "/dev/block/by-name/tee2", incremental)
-  AddFirmware(info, "preloader.img", "/dev/block/mmcblk0boot0", "/dev/block/mmcblk0boot1", incremental)
+  AddFirmware(info, "preloader.bin", "/dev/block/mmcblk0boot0", "/dev/block/mmcblk0boot1", incremental)
+  AddFirmware(info, "vbmeta.img", "/dev/block/by-name/vbmeta", False, incremental)
+  AddFirmware(info, "vbmeta_system.img", "/dev/block/by-name/vbmeta_system", False, incremental)
+  AddFirmware(info, "vbmeta_vendor.img", "/dev/block/by-name/vbmeta_vendor", False, incremental)
