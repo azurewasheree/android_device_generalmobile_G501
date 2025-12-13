@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=v7101o
-VENDOR=teracube
+DEVICE=G501
+VENDOR=generalmobile
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
