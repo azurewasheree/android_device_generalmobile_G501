@@ -1,21 +1,21 @@
-Device tree for the Teracube One (v7101o)
+Device tree for the GM 20 Pro (G501)
 =================================================
 
-The Teracube One (codenamed _"v7101o"_) is a mid-range smartphone from Teracube.
-He was released in February 2020.
+The GM 20 Pro (codenamed _"G501"_) is a mid-range smartphone from General Mobile.
+It was released in August 2020.
 
 | Basic                   | Spec Sheet                                                                                                                     |
 | -----------------------:|:------------------------------------------------------------------------------------------------------------------------------ |
 | CPU                     | Octa-core                                                                                                                      |
-| Chipset                 | Mediatek Helio P60                                                                                                             |
+| Chipset                 | Mediatek Helio P70                                                                                                             |
 | GPU                     | Mali-G72 MP3                                                                                                                   |
 | Memory                  | 6GB RAM                                                                                                                        |
-| Shipped Android Version | 9.0                                                                                                                            |
+| Shipped Android Version | 11.0                                                                                                                            |
 | Storage                 | 128GB                                                                                                                          |
-| Battery                 | Non-removable Li-Po 3400mAh battery                                                                                            |
-| Display                 | 1080 x 2280 pixels, 19:9 ratio                                                                                                 |
-| Camera (Back)           | 12+5MP dual rear cameras                                                                                                       |
-| Camera (Front)          | 8MP                                                                                                                            |
+| Battery                 | Non-removable Li-Po 4050mAh battery                                                                                            |
+| Display                 | 1080 x 2340 pixels, 19:9 ratio                                                                                                 |
+| Camera (Back)           | 48+8+2MP triple rear cameras                                                                                                       |
+| Camera (Front)          | 16MP                                                                                                                            |
 
 ## Device picture
-![v7101o](https://community.e.foundation/uploads/default/original/2X/4/448d17f4d2620120bd7bc036974cf388955ef463.png)
+![G501](https://resim.epey.com/599696/b_general-mobile-gm-20-pro-2.png)
