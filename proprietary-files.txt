@@ -1305,6 +1305,7 @@ vendor/lib/hw/thermal.mt6771.so
 vendor/lib64/hw/thermal.mt6771.so
 
 # Trusted Execution Environment (Microtrust/Beanpod)
+vendor/bin/bp_kmsetkey_ca
 vendor/bin/teei_daemon
 vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
