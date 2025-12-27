@@ -11,10 +11,13 @@ $(call inherit-product, device/generalmobile/G501-modules/modules.mk)
 $(call inherit-product, vendor/generalmobile/G501/G501-vendor.mk)
 
 # Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-8192-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Properties
 -include $(LOCAL_PATH)/properties.mk
+
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Audio
 PRODUCT_PACKAGES += \
