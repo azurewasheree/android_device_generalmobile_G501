@@ -46,6 +46,7 @@
         </interface>
         <fqname>@6.0::IEffectsFactory/default</fqname>
     </hal>
+<!--
     <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
@@ -56,6 +57,7 @@
         </interface>
         <fqname>@2.1::IBiometricsFingerprint/default</fqname>
     </hal>
+-->
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
