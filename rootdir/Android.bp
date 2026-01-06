@@ -48,12 +48,12 @@ prebuilt_etc {
 
 sh_binary {
     name: "partition_permission.sh",
-    src: "bin/partition_permission.sh",
+    src: "etc/partition_permission.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "throttle.sh",
-    src: "bin/throttle.sh",
+    src: "etc/throttle.sh",
     vendor: true,
 }
